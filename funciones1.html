@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones</title>
+
+<style type="text/css">
+	
+	.centrado {
+		text-align: center;
+	}
+
+</style>
+
+<script type="text/javascript">   //EL NAVEGADOR LO PRIMERO QUE HACE ES VER LA FUNCION Y LA MEMORIZA ESTAS INSTRUCCIONES. 
+	
+	function dia_de_hoy() {
+
+		var hoy= new Date();
+                                     //DECLARACION DE LA VARIABLE PARA SABER QUE DIA ES HOY. 
+		document.write(hoy.toDateString());      //EL OBJETO DATE TIENE UN METODO PARA ACHICAR EL FORMATO DE LA FECHA MOSTRADO EL CUAL ES TODATESTRING.EL MISMO SE LE APLICA AL OBJETO CREADO HOY YA QUE ESTE ES DEL TIPO DATE PORQUE SE DECLARO ARRIBA.
+
+	}
+
+</script>	
+
+</head>
+
+<body>
+
+<body></body>
+
+<h1 class="centrado"><strong>Que dia es hoy?</strong></h1>
+
+<p>Hoy es: <script type="text/javascript">dia_de_hoy();</script> </p>
+	 
+	<!-- LLAMO A LA FUNCION PONIENDO SU NOMBRE Y LAS ETIQUETAS SCRIPT DENTRO DE HTML -->
+
+</body>
+</html>

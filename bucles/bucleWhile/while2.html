@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bucle While2</title>
+
+<style type="text/css">
+	
+	#contenedor{
+		width: 25%;
+		background-color: #FFC;
+		margin: auto;
+		padding: 15px;
+	}
+
+</style>
+
+<script type="text/javascript">
+	
+	var nombre, edad, pais;
+
+	nombre = prompt("Introduce tu nombre por favor" , "Escribe aqui tu nombre");
+
+	while(!isNaN(nombre)){
+
+		nombre = prompt("Introduce un nombre valido" , "Escribe aqui tu nombre");
+
+	}	
+
+	edad = prompt("Introduce tu edad por favor" , "Escribe aqui tu edad");
+
+	while(edad <= 0 || edad > 110 || isNaN(edad)){
+
+		edad = prompt("Introduce una edad valida" , "Escribe aqui tu edad");
+
+	}
+
+	pais = prompt("Introduce tu pais de origen" , "Escribe aqui tu pais");
+
+	while(!isNaN(pais)){
+
+		pais = prompt("Introduce un pais valido" , "Escribe aqui tu pais");
+
+	}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="contenedor">
+
+<p>Nombre:
+<script type="text/javascript">document.write(nombre);</script>   <!-- Utilizo el document.write para escribir en la pagina las variables definidas al principio de la pagina e introducidas en el promptx -->
+
+</p>
+<p>Edad:
+<script type="text/javascript">document.write(edad);</script>  
+
+</p>	
+<p>Pais:
+<script type="text/javascript">document.write(pais);</script>  
+
+</p>
+
+</div>	
+	
+</body>
+</html>

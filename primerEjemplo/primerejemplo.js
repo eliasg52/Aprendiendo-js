@@ -1,0 +1,1 @@
+alert("Archivo js linkeado");

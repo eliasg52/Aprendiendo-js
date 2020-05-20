@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+
+</head>
+<body>
+
+<table width="25%" border="0">
+
+	<tr>
+		<td><label for="textfield"></label>
+		<input type="text" name="textfield" id="c_mensaje"></td>
+		<td><label for="textfield2" ></label>
+		<input type="text" name="textfield2" id="c_intentos"></td>
+	</tr>
+
+</table>
+
+<script type="text/javascript">
+	
+	var num1=prompt("Introduce el primer numero");
+
+	var num2=prompt("Introduce el segundo numero");
+
+	if (!isNaN(num1) && !isNaN(num2)) {  /*IF PADRE -- ESTE IF COMPRUEBA SI LOS 2 VALORES  AGREGADOS SON UN NUMERO. SI LO SON SIGUE LA EJECUCION DEL PROGRAMA, DE LO CONTRARIO IRA AL ELSE DE ESTE IF PADRE. EL isNaN(no es un numero) CON EL OPERADOR ! AGREGADO QUEDARIA LO CONTRARIO isaN(es un numero) OSEA QUE LA CONDICION COMPRUEBA SI ES UN NUMERO.SI ALGUNO DE LOS 2 VALORES AGREGADOS NO ES UN NUMERO "SALTARIA" AL ELSE PADRE Y NO SE EJECUTA EL PROGRAMA. */
+		
+		var operacion=prompt("Que operacion deseas realizar? suma/resta/multiplicacion/division");
+
+		if (operacion=="suma"){
+			
+			alert(parseInt(num1) + parseInt(num2));
+		}
+
+		else if (operacion=="resta") {
+
+			alert(parseInt(num1) - parseInt(num2));
+
+		}																		/*TODO ESTE IF SERIA UN IF ANIDADO YA QUE ESTA DENTRO 																				DE OTRO*/
+
+		else if (operacion=="multiplicacion" || operacion=="multiplicación") {
+
+			alert(parseInt(num1) * parseInt(num2));
+
+		}
+
+		else if (operacion=="division" || operacion=="división") {
+
+			alert(parseInt(num1) / parseInt(num2));
+
+		}
+
+		else{
+
+			alert("No es una operacion valida");
+
+		}
+	} //CIERRE DEL IF PADRE QUE CONTIENE A TODOS LOS DEMAS
+
+	else{  // ELSE DEL IF PADRE 
+
+		if(typeof(num1) == "string" || typeof(num2) == "string"){		//IF ANIDADO DENTRO DEL ELSE PADRE
+
+			alert("Has introducido un valor no numerico");				/*LA FUNCION TYPEOF COMPRUEBA QUE LA VARIABLE SEA DEL TIPO STRING.SI 
+																		ES VERDADERO(TRUE) EJECUTA EL ALERT*/
+		}
+
+		else{
+
+			
+
+		}
+	}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Numero aleatorio</title>
+
+
+</head>
+<body>
+
+<table width="25%" border="0">
+	<tr>
+		<td><label for="textfield"></label>
+		<input type="text" name="textfield" id="c_mensaje"></td>	
+		<td><label for="textfield2"></label>
+		<input type="text" name="textfield2" id="c_intentos"></td>	
+	</tr>
+
+</table>
+
+<script type="text/javascript">
+	
+	var aleatorio = Math.round(Math.random()*100);
+
+	var minum, intentos, cuadroMensaje, cuadroIntentos;
+
+	minum = 0;
+
+	intentos = 0;
+
+	cuadroMensaje = document.getElementById("c_mensaje");
+
+	cuadroIntentos = document.getElementById("c_intentos");
+
+	do{
+
+		minum = prompt("Introduce un numero entre 0 y 100");
+
+		if(aleatorio > minum){
+
+			cuadroMensaje.value = "Es mas alto";
+
+			cuadroMensaje.style.fontSize = "18px";  //OBJETO.PROPIEDAD = VALOR
+
+		}
+
+		else if(aleatorio < minum){
+
+			cuadroMensaje.value = "Es mas bajo";
+
+			cuadroMensaje.style.fontSize = "18px";
+
+		}
+
+		intentos++;
+
+		cuadroIntentos.value = intentos;
+
+		cuadroIntentos.style.fontSize = "18px";
+
+		cuadroIntentos.style.color = "red";
+
+		cuadroIntentos.style.textAlign = "center";
+
+	}while(aleatorio != minum);
+
+cuadroMensaje.value = "Correcto!";
+
+cuadroMensaje.style.color = "blue";
+
+
+	
+
+</script>
+</body>
+</html>

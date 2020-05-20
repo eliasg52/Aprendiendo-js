@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Funciones</title>
+
+	<script type="text/javascript">
+		
+		function escribe_nombre(nombre) {
+
+			document.write(nombre);
+
+		}
+
+		var el_nombre= prompt("Escribe tu nombre");  //SE GUARDA EN LA VARIABLE EL NOMBRE INTRODUCIDO POR EL USUARIO EL CUAL LO PONDREMOS DSP DE PARAMETRO A LA HORA DE LLAMAR A LA FUNCION. 
+
+			
+
+	</script>
+
+
+
+</head>
+<body>
+
+	<p style="font-size: 24px; font-weight: bold">Hola: <script type="text/javascript">escribe_nombre(el_nombre);</script> .Bienvendio a mi pagina web</p>  
+
+	<!-- EL PARAMETRO(el_nombre) "viaja" HACIA LA FUNCION CREADA ARRIBA Y SE ALMACENA EN (nombre) ES COMO SI QUEDARIA nombre=el_nombre LUEGO SE EJECUTA EL DOCUMENT.WRITE Y SE ESCRIBE LO ALMACENDA EN (nombre) QUE A SU VEZ FUE LO ESCRITO EN EL PROMPT el_nombre -->
+
+	<p> Como veras <script type="text/javascript">escribe_nombre(el_nombre);</script> podemos llamar a la funcion cuantas veces quisieramos</p>
+
+	<!-- LA FUNCION PUEDE SER INVOCADA CUANTAS VECES LA NECESITEMOS -->
+</body>
+</html>

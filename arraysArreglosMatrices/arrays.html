@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="micss.css">
+<script>
+
+var articulos = ["Zapatillas","Camiseta","Pantalon","Medias"];
+
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+	  
+        document.write("<p>"+ "El primer articulo es: " + articulos[0] + "</p>"); //ESTO MOSTRARIA EL ELEMENTO CAMISETA YA QUE ES EL INDICE 1
+
+        /*alert(articulos.length); MUESTRA LA CANTIDAD DE VALORES QUE HAY EN EL ARRAY */
+
+        document.write("<p>" + "El ultimo articulo es: " + articulos[articulos.length - 1] + "</p>"); //MUESTRA EL ULTIMO VALOR DE UN ARRAY CON LA PROPIEDAD .LENGHT Y RESTANDOLE 1
+
+        articulos.unshift("Pelota"); //AGREGA UN ELEMENTO AL PRINCIPIO DEL ARRAY CN EL METODO UNSHIFT
+
+        document.write("<p>" + "El articulo agregado es: " + articulos[0] + "</p>");
+
+        articulos.push(prompt("Agrega un articulo al array")); //AGREGA UN ELEMENTO AL PRINCIPIO DEL ARRAY CN EL METODO PUSH
+
+        document.write("<p>" + "El articulo introducido por el usuario al final del array es: " + articulos[articulos.length - 1] + "</p>");
+
+        document.write("<p>" + articulos + "</p>");
+
+        articulos.shift(); //BORRA EL PRIMER ELEMENTO CON EL METODO SHIFT
+
+        document.write("<p>" + articulos + "</p>");
+
+        articulos.pop(); //BORRA EL ULTIMO ELEMENTO CON EL METODO POP
+
+         document.write("<p>" + articulos + "</p>");
+					
+	  </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

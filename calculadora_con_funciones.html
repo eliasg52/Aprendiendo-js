@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+</head>
+
+<script type="text/javascript">
+	
+	function suma(num1, num2) {
+
+		alert("La suma es: " + (num1 + num2));
+
+	}
+
+	function resta(num1, num2) {
+
+		 alert("La resta es: " + (num1 - num2));
+
+	}
+
+	function multiplicar(num1, num2) {
+
+		 alert("La multiplicacion es: " + (num1 * num2));
+
+	}
+
+	function dividir(num1, num2) {
+
+		 alert("La division es: " + (num1 / num2));
+
+	}
+
+	do{
+
+		var repetir= "si";  //VARIABLE QUE ME PERMITE HACER OTRO CALCULO
+
+		var operacion= prompt("Que operacion queres hacer?");
+
+		var operador1= parseInt(prompt("Introduce el nro 1"));   //INTRODUCIMOS LA FUNCION PARSEINT PARA EVITAR EL ERROR AL MOMENTO DE LA SUMA YA QUE EL OPERADOR + CONCATENARIA LOS OPERADORES YA QUE TOMA EL PROMPT COMO UN STRING.
+
+		var operador2= parseInt(prompt("Introduce el nro 2"));
+
+		if (operacion == "sumar") {
+
+			suma(operador1, operador2);
+
+		}
+
+		else if(operacion == "restar"){
+
+			resta(operador1, operador2);
+
+		}
+
+		else if(operacion == "multiplicacion"){
+
+			multiplicar(operador1, operador2);
+
+		}
+
+		else if(operacion == "division"){
+
+			dividir(operador1, operador2);
+
+		}
+
+		else{
+
+			alert("Lo siento, esa operacion no existe");
+
+		}
+
+		repetir= prompt("Queres hacer otra operacion?");
+
+	}	while(repetir== "si");
+
+
+</script>
+
+
+<body>
+	
+</body>
+</html>

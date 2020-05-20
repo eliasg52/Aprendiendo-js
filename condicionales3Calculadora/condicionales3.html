@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Condicionales 3</title>
+
+<script type="text/javascript">
+	
+	var num1 = prompt("Introduzca el primer valor");
+
+	var num2 = prompt("Introduzca el segundo valor");
+
+	if (!isNaN(num1) && !isNaN(num2)) {            //IF PADRE QUE CONTIENE A TODO EL PROGRAMA. SOLO SE EJECUTA LA OPERACION SI SE INTRODUCEN VALORES NUMERICOS
+		
+		var operacion = prompt("Que operacion deseas realizar? Sumar / Restar / Multiplicar / Dividir").toLowerCase();
+
+		if(operacion == "sumar"){
+
+			alert(parseInt(num1)+ parseInt(num2));        //HAY QUE UTILIZAR EL METODO PARSEINT PARA PASAR EL PROMPT INTRODUCIDO EN NUM1 Y NUM2 DE UN STRING A UN ENTERO.
+
+		}
+
+		else if(operacion == "restar"){
+
+			alert(parseInt(num1) - parseInt(num2));
+
+		}
+
+		else if(operacion == "multiplicar"){
+
+			alert(parseInt(num1) * parseInt(num2));
+
+		}
+
+		else if(operacion == "dividir"){
+
+			alert(parseInt(num1) / parseInt(num2));
+
+		}
+
+		else{
+
+			alert("Esa operacion no existe!");
+
+		}
+	}
+
+	else{								//ELSE PERTENECIENTE AL IF PADRE
+
+		if (typeof(num1) == "string" || typeof(num2) == "string") {  //IF ANIDADO DENTRO DEL ELSE PADRE. CHEQUEA SI EL VALOR INTRODUCIDO ES DE TIPO STRING.
+			
+			alert("Introdujiste un valor no numerico");
+
+		}
+
+		else{
+
+			alert("Ha ocurrido un error inesperado");
+
+		}
+
+	}
+
+
+
+</script>
+
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Uso de while 2</title>
+<style type="text/css">
+	
+	#contenedor{
+		width: 25%;
+		background-color: #FFC;
+		margin: auto;
+		padding: 15px;
+	}
+
+</style>
+
+<script type="text/javascript">
+	
+	var nombre, edad, poblacion;
+
+	nombre=prompt("Pone tu nombre", "Nombre");
+
+	while(!isNaN(nombre)){						/*VERIFICA LA VARIABLE NOMBRE.MIENTRAS SEA UN NUMERO EL INGRESADO SE REALIZARA LA FUNCION YA QUE TIENE QUE SER UN STRING POR LA DECLARACION DEL !isNaN*/
+
+		nombre=prompt("Introduce un nombre valido y no un numero")
+
+	}
+
+	edad=prompt("Pone tu edad");
+
+	while (edad<=0 || edad>105 || isNaN(edad)){   /*AL PONER UNA EDAD MENOR QUE 0 O MAYOR QUE 105 SE ALMACENA EN LA VARIABLE EDAD Y CUMPRUEBA 												LA CONDICION. COMO NO SE CUMPLE VUELVE A REPETIR EL PROMPT HASTA QUE SE INTRODUZCA UNA EDAD CORRECTA.LUEGO SIGUE EL PROGRAMA NORMALMENTE. USANDO DSP EL ISNAN COMPROBAMOS SI LA VARIABLE EDAD NO ES UN NUMERO,SI NO ES UN NUMERO OSEA QUE SE CUMPLE LA CONDICION, SE EJECUTA NUEVAMENTE EL PROMPT HASTA QUE SE INTRODUZCA UN NUMERO Y NO UN STRING */
+
+		edad=prompt("Introduce una edad valida");
+
+	}
+
+	poblacion=prompt("Introduce tu pais");
+
+	while (!isNaN(poblacion)) {
+		
+		poblacion= prompt("Introduce un pais valido");
+
+	}
+
+
+
+
+</script>
+
+</head>
+
+<body>
+
+	<div id="contenedor">
+		
+	<p>Nombre:
+	<script type="text/javascript">
+		
+		document.write(nombre);  //SE IMPRIME EN LA PAGINA LA VARIABLE INTRODUCIDA EN EL PROMPT CREADO ARRIBA.
+
+	</script>
+
+	</p>
+
+	<p>Edad:
+	<script type="text/javascript">
+		
+		document.write(edad);
+
+	</script>
+
+	</p>
+
+	<p>Poblacion:
+	<script type="text/javascript">
+		
+		document.write(poblacion);
+
+	</script>
+
+	</p>
+
+	</div>
+	
+</body>
+</html>

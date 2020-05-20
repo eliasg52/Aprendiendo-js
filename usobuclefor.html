@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<script type="text/javascript">
+	
+	/*for(var i=0; i<10; i++){
+
+		alert("Hola");               
+
+	}          EJEMPLO 1*/
+
+	/*var meses= ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+	for(var i = 0; i < meses.length ; i++) {				// condicion es 0<12 y luego se va incrementando en 1 hasta llegar a 12=12
+		
+		document.write(meses[i] + "<br/>");                      //alert(meses[0])     mostraria enero y asi hasta que llegue a alert(11)  que seria diciembre
+	}
+                       EJEMPLO 2*/
+
+var trabajadores= new Array();       // ESTO CREA UN ARRAY CON ELEMENTOS INDETERMINADOS.NO LE ESTAMOS DICIENDO AL PROGRAMA CUANTOS ELEMENTOS VA A TENER EN SU INTERIOR.
+
+var persona= "";    //STRING VACIO 
+
+var contador= 0;
+
+while (persona != "salir") {         //al momento de poner la palabra salir en el prompt de persona,la condicion no se cumpliria ya que quedaria "salir" = "salir", y se detiene la ejecucion del programa.
+	
+	persona= prompt("Introduce un trabajador"); 
+
+	trabajadores[contador]= persona; //la primer persona que ingresemos en introducira en al array trabajadores en la posicion [0] ya que contador vale eso. luego cuando lo incrementamos se va llenanod el array con los indices correspondientes.
+
+	contador++;
+
+}
+
+trabajadores.pop();   //esto sacaria la palabra "salir" que es el ultimo elemento del array.
+
+for(let i = 0; i < trabajadores.length; i++) {
+
+	document.write(trabajadores[i]);
+
+}
+
+</script>
+
+</head>
+<body>
+	
+</body>
+</html>

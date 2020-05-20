@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion orientada a objetos</title>
+</head>
+<body>
+
+<input type="button" id="boton1">
+
+<input type="button" id="boton2">
+
+<input type="text" id="micuadro">
+
+<script type="text/javascript">
+	
+	var miboton = document.getElementById("boton1");  //document ES EL OBJETO DOCUMENTO, MI PAGINA WEB. GETELEMENTBYID es un metodo que lo que hace es identificar todos los objetos que tengo en mi pagina web atraves de su ID. En este caso identifica el objeto que tengo en la pagina web con el nombre boton1 y almacena el valor en la variable creada "miboton"
+
+	miboton.style.width= "250px"; //Modifica el ancho del boton desde javascript con la propiedad style.width objeto.propiedad = "valor"
+
+	miboton.style.height= "250px"; //Modifica el alto del boton desde javascript con la propiedad style.width objeto.propiedad = "valor"
+
+	miboton.style.backgroundColor= "red"; //Modifica el color del boton desde javascript con la propiedad style.width objeto.propiedad = "valor"
+
+	var miboton2 = document.getElementById("boton2");
+
+	miboton2.style.width= "250px"; //Modifica el ancho del boton desde javascript con la propiedad style.width objeto.propiedad = "valor"
+
+	miboton2.style.height= "250px"; //Modifica el alto del boton desde javascript con la propiedad style.width objeto.propiedad = "valor"
+
+	miboton2.style.backgroundColor= "green";//Modifica el color del boton desde javascript con la propiedad style.width objeto.propiedad="valor"
+
+	miboton2.focus(); //Modifica el foco del boton desde javascript con el metodo focus objeto.metodo();
+
+	var cuadroTexto= document.getElementById("micuadro");
+
+	cuadroTexto.style.backgroundColor= "pink";
+
+	cuadroTexto.value= "Escriba aqui";
+
+	cuadroTexto.style.height= "150px";
+
+</script>	
+	
+</body>
+</html>
